@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/quiz/quiz",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarTitleText": "SBTI 人格测试",
+    "navigationBarBackgroundColor": "#F4F8F4",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F4F8F4",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

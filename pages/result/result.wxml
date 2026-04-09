@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="card result-wrap" wx:if="{{loaded}}">
+    <view class="hero">
+      <view class="kicker">{{result.modeKicker}}</view>
+      <view class="name">{{result.finalType.code}}（{{result.finalType.cn}}）</view>
+      <view class="badge">{{result.badge}}</view>
+      <view class="sub">{{result.sub}}</view>
+      <view class="intro">{{result.finalType.intro}}</view>
+    </view>
+
+    <view class="block">
+      <view class="block-title">该人格的简单解读</view>
+      <view class="desc">{{result.finalType.desc}}</view>
+    </view>
+
+    <view class="block" wx:if="{{result.top3.length}}">
+      <view class="block-title">Top 3 匹配人格</view>
+      <view class="top3-list">
+        <block wx:for="{{result.top3}}" wx:key="code">
+          <view class="top3-item">
+            <view>
+              <view class="top3-name">{{item.code}}（{{item.cn}}）</view>
+              <view class="top3-sub">命中 {{item.exact}} / 15 维</view>
+            </view>
+            <view class="top3-score">{{item.similarity}}%</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="block">
+      <view class="block-title">十五维度评分</view>
+      <view class="dim-list">
+        <block wx:for="{{result.dims}}" wx:key="dim">
+          <view class="dim-item">
+            <view class="dim-top">
+              <view class="dim-name">{{item.label}}</view>
+              <view class="dim-score">{{item.level}} / {{item.raw}}分</view>
+            </view>
+            <view class="dim-desc">{{item.explanation}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="block note">
+      <view class="block-title">友情提示</view>
+      <view class="desc">{{funNote}}</view>
+    </view>
+
+    <view class="actions">
+      <button class="secondary-btn btn" bindtap="onRetest">重新测试</button>
+      <button class="primary-btn btn" bindtap="onHome">回到首页</button>
+    </view>
+  </view>
+</view>

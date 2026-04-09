@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="card quiz-wrap">
+    <view class="topbar">
+      <view class="progress">
+        <view class="progress-inner" style="width: {{progressPercent}}%;"></view>
+      </view>
+      <view class="progress-text">{{doneCount}} / {{totalCount}}</view>
+    </view>
+
+    <view class="hint">{{hintText}}</view>
+
+    <view class="question-list">
+      <block wx:for="{{visibleQuestions}}" wx:for-item="question" wx:for-index="qIndex" wx:key="id">
+        <view class="question-card">
+          <view class="q-meta">
+            <view class="badge">第 {{qIndex + 1}} 题</view>
+            <view class="dim">{{question.special ? '补充题' : '维度已隐藏'}}</view>
+          </view>
+          <view class="q-title">{{question.text}}</view>
+
+          <view class="options">
+            <block wx:for="{{question.options}}" wx:for-item="option" wx:for-index="optIndex" wx:key="value">
+              <view class="opt {{answers[question.id] === option.value ? 'opt-active' : ''}}"
+                data-qid="{{question.id}}"
+                data-value="{{option.value}}"
+                bindtap="onSelect">
+                <view class="opt-code">{{letters[optIndex]}}</view>
+                <view class="opt-label">{{option.label}}</view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class="actions">
+      <button class="secondary-btn btn" bindtap="goHome">返回首页</button>
+      <button class="primary-btn btn" disabled="{{!canSubmit}}" bindtap="onSubmit">提交并查看结果</button>
+    </view>
+  </view>
+</view>

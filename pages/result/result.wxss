@@ -1,0 +1,162 @@
+.result-wrap {
+  padding: 24rpx;
+  margin-top: 10rpx;
+}
+
+.hero {
+  border: 1rpx solid #d8e5da;
+  border-radius: 22rpx;
+  background: linear-gradient(160deg, #ffffff 0%, #f2f8f3 100%);
+  padding: 24rpx;
+}
+
+.kicker {
+  color: #4b6651;
+  font-size: 22rpx;
+}
+
+.name {
+  margin-top: 10rpx;
+  font-size: 50rpx;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #213025;
+}
+
+.badge {
+  margin-top: 14rpx;
+  display: inline-block;
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  border: 1rpx solid #d8e5da;
+  background: #ebf5ed;
+  color: #4f6a56;
+  font-size: 22rpx;
+}
+
+.sub {
+  margin-top: 16rpx;
+  color: #5e6e64;
+  line-height: 1.7;
+  font-size: 26rpx;
+}
+
+.intro {
+  margin-top: 12rpx;
+  color: #334137;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.block {
+  margin-top: 18rpx;
+  border: 1rpx solid #d8e5da;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  background: #ffffff;
+}
+
+.block-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #27342b;
+}
+
+.desc {
+  margin-top: 12rpx;
+  color: #3b4a40;
+  line-height: 1.82;
+  font-size: 27rpx;
+}
+
+.top3-list {
+  margin-top: 12rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.top3-item {
+  border: 1rpx solid #d8e5da;
+  border-radius: 14rpx;
+  background: #f9fcfa;
+  padding: 12rpx 14rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top3-name {
+  font-size: 26rpx;
+  color: #2b382f;
+  font-weight: 700;
+}
+
+.top3-sub {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: #67756d;
+}
+
+.top3-score {
+  color: #4d6754;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+
+.dim-list {
+  margin-top: 12rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.dim-item {
+  border: 1rpx solid #d8e5da;
+  border-radius: 14rpx;
+  background: #f9fcfa;
+  padding: 12rpx 14rpx;
+}
+
+.dim-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14rpx;
+}
+
+.dim-name {
+  font-size: 26rpx;
+  font-weight: 700;
+  color: #2a392f;
+}
+
+.dim-score {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: #4d6754;
+}
+
+.dim-desc {
+  margin-top: 8rpx;
+  color: #5f6f65;
+  line-height: 1.75;
+  font-size: 24rpx;
+}
+
+.note {
+  background: linear-gradient(180deg, #ffffff, #f6faf7);
+}
+
+.actions {
+  margin-top: 22rpx;
+  display: flex;
+  gap: 12rpx;
+}
+
+.btn {
+  flex: 1;
+  height: 84rpx;
+  line-height: 84rpx;
+  font-size: 28rpx;
+}

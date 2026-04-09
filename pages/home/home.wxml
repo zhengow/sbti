@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="card hero">
+    <view class="tag">SBTI · 娱乐向人格测试</view>
+    <view class="title">MBTI已经过时，SBTI来了。</view>
+    <view class="sub">31道题，含隐藏分支。全选完才会放行，做完就能看到你的主类型、匹配度和十五维度画像。</view>
+
+    <button class="primary-btn start-btn" bindtap="onStart">开始测试</button>
+
+    <view class="meta">
+      <view>参考站点：sbti.unun.dev</view>
+      <view>原作者：B站 @蛆肉儿串儿</view>
+      <view>声明：本测试仅供娱乐，不用于医学/心理诊断</view>
+    </view>
+  </view>
+</view>

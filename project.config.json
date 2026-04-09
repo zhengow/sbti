@@ -1,0 +1,25 @@
+{
+  "description": "SBTI mini program",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "uploadWithSourceMap": true,
+    "lazyloadPlaceholderEnable": false,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "minifyJS": true,
+    "compileHotReLoad": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.6.4",
+  "appid": "touristappid",
+  "projectname": "sbti-miniapp",
+  "condition": {}
+}

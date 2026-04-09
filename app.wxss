@@ -1,0 +1,35 @@
+page {
+  background: #f4f8f4;
+  color: #1f2b22;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 28rpx;
+  background:
+    radial-gradient(circle at 18% -10%, #f8fff8 0%, #f4f8f4 35%),
+    radial-gradient(circle at 110% 12%, #dfeedd 0%, #f4f8f4 42%);
+}
+
+.card {
+  background: #ffffff;
+  border: 1rpx solid #d8e5da;
+  border-radius: 28rpx;
+  box-shadow: 0 24rpx 48rpx rgba(76, 107, 84, 0.08);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #5f8066, #496550);
+  color: #ffffff;
+  border-radius: 18rpx;
+  font-weight: 700;
+}
+
+.secondary-btn {
+  background: #ffffff;
+  color: #48624e;
+  border-radius: 18rpx;
+  border: 1rpx solid #d8e5da;
+  font-weight: 700;
+}
