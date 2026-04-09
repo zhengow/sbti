@@ -2,18 +2,6 @@
   padding: 42rpx 34rpx;
   margin-top: 24rpx;
   position: relative;
-  overflow: hidden;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  right: -88rpx;
-  top: -86rpx;
-  width: 300rpx;
-  height: 300rpx;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(102, 134, 111, 0.18), rgba(102, 134, 111, 0));
 }
 
 .tag {
@@ -50,7 +38,12 @@
 .start-btn {
   margin-top: 36rpx;
   height: 88rpx;
-  line-height: 88rpx;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
   font-size: 30rpx;
 }
 
@@ -61,4 +54,5 @@
   color: #6a776f;
   font-size: 24rpx;
   line-height: 1.8;
+  text-align: center;
 }
