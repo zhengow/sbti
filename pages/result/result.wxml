@@ -8,6 +8,10 @@
       <view class="intro">{{result.finalType.intro}}</view>
     </view>
 
+    <view class="block poster-block" wx:if="{{typeImage}}">
+      <image class="type-poster" src="{{typeImage}}" mode="widthFix" />
+    </view>
+
     <view class="block">
       <view class="block-title">该人格的简单解读</view>
       <view class="desc">{{result.finalType.desc}}</view>
