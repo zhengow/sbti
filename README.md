@@ -21,3 +21,19 @@
 ## 说明
 - 该项目为娱乐向人格测试实现，参考了 `https://sbti.unun.dev/` 的流程结构。
 - 文案做了适度改写与精简，便于移动端阅读。
+
+## GitHub Pages 发布
+- 已提供可直接发布的 H5 目录：`docs/`
+- 入口文件：`docs/index.html`
+- 静态资源：`docs/assets/type-images/*`
+
+### 开启步骤
+1. 推送代码到 GitHub 仓库
+2. 打开仓库 `Settings -> Pages`
+3. `Build and deployment` 选择 `Deploy from a branch`
+4. `Branch` 选择你的分支（如 `main`），目录选择 `/docs`
+5. 保存后等待 1-3 分钟，访问生成的 `https://<username>.github.io/<repo>/`
+
+### H5 版本说明
+- 逻辑与当前小程序一致：单题自动下一题、饮酒隐藏分支、15 维度评分、人格匹配与 Top3
+- 结果页使用本地人格图片，不依赖外链

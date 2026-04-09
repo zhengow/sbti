@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBTI 人格测试</title>
+  <meta name="description" content="SBTI 人格测试 H5 版本" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section id="homeScreen" class="screen active">
+      <article class="card hero">
+        <div class="tag">SBTI · 娱乐向人格测试</div>
+        <h1>MBTI已经过时，SBTI来了。</h1>
+        <button id="startBtn" class="btn btn-primary">开始测试</button>
+        <p class="author">原作者：B站 @蛆肉儿串儿</p>
+      </article>
+    </section>
+
+    <section id="quizScreen" class="screen">
+      <article class="card quiz">
+        <div class="topbar">
+          <div class="progress"><span id="progressBar"></span></div>
+          <div id="progressText" class="progress-text">0 / 31</div>
+        </div>
+
+        <div class="meta-row">
+          <div id="etaText">预计剩余约 1 分钟</div>
+          <button id="exitBtn" class="link-btn">退出测试</button>
+        </div>
+
+        <p id="hintText" class="hint">全选完才会放行。世界已经够乱了，起码把题做完整。</p>
+
+        <article id="questionCard" class="question"></article>
+
+        <p id="footerTip" class="footer-tip">请选择一个选项</p>
+
+        <div class="actions">
+          <button id="prevBtn" class="btn btn-secondary">上一题</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <article class="card result">
+        <article class="block hero-result">
+          <div id="modeKicker" class="kicker"></div>
+          <h2 id="typeName" class="type-name"></h2>
+          <p id="matchBadge" class="badge"></p>
+          <p id="typeSub" class="sub"></p>
+          <p id="typeIntro" class="intro"></p>
+        </article>
+
+        <article id="posterBlock" class="block poster-block">
+          <img id="typePoster" alt="人格图片" />
+        </article>
+
+        <article class="block">
+          <h3>该人格的简单解读</h3>
+          <p id="typeDesc" class="desc"></p>
+        </article>
+
+        <article class="block">
+          <h3>Top 3 匹配人格</h3>
+          <div id="top3List" class="top3-list"></div>
+        </article>
+
+        <article class="block">
+          <h3>十五维度评分</h3>
+          <div id="dimList" class="dim-list"></div>
+        </article>
+
+        <article class="block">
+          <h3>友情提示</h3>
+          <p id="funNote" class="desc"></p>
+        </article>
+
+        <article class="block author-note">
+          <div class="author-head">
+            <h3>作者的话</h3>
+            <button id="toggleAuthorBtn" class="mini-btn">收起</button>
+          </div>
+          <div id="authorBody" class="author-body">
+            <p>本测试首发于b站up主蛆肉儿串儿（UID417038183），初衷是劝诫一位爱喝酒的朋友戒酒。</p>
+            <p>由于作者的人格是SHIT愤世者，所以平等地攻击了各位，在此抱歉！！不过我是一个绝世大美女，你们一定会原谅我，有B站的朋友们也可以关注我。</p>
+            <p>关于这个测试，我没法很好地平衡娱乐和专业性，因此对于一些人格的阐释较为模糊或完全不准（如屌丝可能并非真的屌丝），如有冒犯非常抱歉！！</p>
+            <p>再鉴于时间精力有限，就随便搞了一个先这样玩玩，后续会慢慢完善修改的，总之好玩为主，还请不要用于盈利呀。</p>
+          </div>
+        </article>
+
+        <div class="actions two-col">
+          <button id="retestBtn" class="btn btn-secondary">重新测试</button>
+          <button id="shareBtn" class="btn btn-primary">复制结果文案</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
