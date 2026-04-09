@@ -33,7 +33,8 @@ Page({
     loaded: false,
     result: null,
     funNote: "",
-    typeImage: ""
+    typeImage: "",
+    showAuthorNote: true
   },
 
   onShow() {
@@ -62,7 +63,23 @@ Page({
     wx.redirectTo({ url: "/pages/quiz/quiz" });
   },
 
-  onHome() {
-    wx.reLaunch({ url: "/pages/home/home" });
+  onToggleAuthorNote() {
+    this.setData({
+      showAuthorNote: !this.data.showAuthorNote
+    });
+  },
+
+  onShareAppMessage() {
+    const result = this.data.result;
+    if (!result) {
+      return {
+        title: "SBTI 人格测试",
+        path: "/pages/home/home"
+      };
+    }
+    return {
+      title: `我测出了 ${result.finalType.code}（${result.finalType.cn}），你也来测测？`,
+      path: "/pages/home/home"
+    };
   }
 });

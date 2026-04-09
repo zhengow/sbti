@@ -54,7 +54,7 @@
 
     <view class="actions">
       <button class="secondary-btn btn" bindtap="onRetest">重新测试</button>
-      <button class="primary-btn btn" bindtap="onHome">回到首页</button>
+      <button class="primary-btn btn" open-type="share">分享</button>
     </view>
   </view>
 </view>
