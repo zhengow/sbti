@@ -6,6 +6,7 @@
     <button class="primary-btn start-btn" bindtap="onStart">开始测试</button>
 
     <view class="meta">
+      <view>作者：zc</view>
       <view>原作者：B站 @蛆肉儿串儿</view>
     </view>
   </view>
