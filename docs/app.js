@@ -202,6 +202,7 @@
     state.answers = {};
     state.result = null;
     state.currentIndex = 0;
+    state.visibleQuestions = [];
     const regular = shuffle(questions);
     const insertAt = Math.floor(Math.random() * regular.length) + 1;
     state.shuffledQuestions = [
